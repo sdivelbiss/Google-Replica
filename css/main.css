@@ -54,7 +54,7 @@ div.navigation a:hover {
 	padding:10px 15px;
 }
 .share:hover {
-	background-color: #E1E1E1E1;
+	background-color: #E1E1E1;
 	cursor: pointer;
 }
 .profile {
@@ -77,7 +77,7 @@ div.navigation a:hover {
 	font-size:16px;
 	height:30px;
 	margin:0 auto;
-	padding:5 px;
+	padding: 5px;
 	width:45%;
 }
 .search {
@@ -100,16 +100,14 @@ div.navigation a:hover {
 	border:1px solid #c6c6c6;
 	color:#333; 
 }
-div.footer {
-	background-color:#f5f5f5;
-	border-top:1px solid #e4e4e4;
-	bottom:0px;
-	font-size:10px;
-	height:40px;
-	position:fixed;
+footer {
+	bottom: 0 !important;
+	position: absolute;
 	width:100%;
-	font-family: Arial;
+	background-color: #f2f2f2;
+	border-top: 1px solid #e4e4e4; 
 }
+
 div.footer ul.left {
 	float: left;
 }
@@ -124,12 +122,79 @@ div.footer li {
 	padding: 5px 10px 0 0;
 	vertical-align: bottom;
 }
-div.microphone {
+/*div.microphone {
 	margin-left: 900px;
 	position: relative;
 	top: -28px;
+}*/
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 915px) {
+	.cta input {
+		width: 70%;
+	}
+
 }
 
+@media (max-width: 435px) {
+	.share, .fa.fa-bell {
+		display: none;
+	}
+	.logo img {
+		272 × 92
+		width: 218px;
+		height: 74px;
+	}
+
+	.search button {
+		font-size: 11px;
+		padding: 7px 11.5px;
+	}
+
+
+}
+
+/*@media (max-width: 533px) {
+
+	footer .right {
+		width: 100%;
+
+	}
+
+}
+
+@media (max-width: 533px) {
+
+	.footer .left li{
+
+	}
+
+}*/
+
+@media (max-width: 527px) {
+	footer {
+		margin: 0 auto;
+		width: 100%;
+
+	}
+
+	ul.right {
+		text-align: center;
+		margin: 0 auto;
+		width: 80%;
+		padding-right: 0;
+		float: none;
+	}
+	ul.left {
+		text-align: center;
+		margin: 0 auto;
+		width: 99%;
+		padding: 0;
+		float: none;
+	}
+	
+}
 
 
 
